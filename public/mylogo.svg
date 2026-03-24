@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .logo-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 800; /* mimics font-bold */
+      font-size: 46px; /* text-2xl scaled for the viewbox */
+      letter-spacing: -3px; /* mimics tracking-tighter */
+    }
+    .main-text {
+      fill: #000000; /* Base text color */
+    }
+    .primary-dot {
+      fill: #2563eb; /* REPLACE THIS with your actual primary color hex code */
+    }
+  </style>
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" class="logo-text">
+    <tspan class="main-text">SSP</tspan><tspan class="primary-dot">.</tspan>
+  </text>
+</svg>
