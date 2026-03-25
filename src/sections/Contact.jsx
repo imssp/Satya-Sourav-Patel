@@ -76,11 +76,11 @@ export const Contact = () => {
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      console.error("EmailJS error:", err);
+      console.error("EmailJS error:", error);
       setSubmitStatus({
         type: "error",
         message:
-          err.text || "Failed to send message. Please try again later.",
+          error.text || "Failed to send message. Please try again later.",
       });
     } finally {
       setIsLoading(false);
@@ -221,14 +221,14 @@ export const Contact = () => {
                     href={item.href}
                     className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <item.icon className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <div className="text-sm text-muted-foreground">
                         {item.label}
                       </div>
-                      <div className="font-medium">{item.value}</div>
+                      <div className="font-medium break-all">{item.value}</div>
                     </div>
                   </a>
                 ))}
