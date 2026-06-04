@@ -92,7 +92,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Satya Sourav Patel — a Cloud & DevOps Engineer. I specialize in transforming complex infrastructure into code using Terraform, AWS, and Kubernetes. I build seamless, end-to-end cloud-native platforms that drive developer productivity and system reliability.
+                Hi, I'm Satya Sourav Patel — a Software Engineer with expertise in Cloud & DevOps Engineering. I specialize in transforming complex infrastructure into code using Terraform, AWS, and Kubernetes. I build seamless, end-to-end cloud-native platforms that drive developer productivity and system reliability.
               </p>
             </div>
 
